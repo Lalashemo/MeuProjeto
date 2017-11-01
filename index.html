@@ -1,12 +1,26 @@
 <html>
     <head>
     </head>
+
     <body>
-       jdhfdjbgdisughbh
-    <script>
-    for (var i = 0; i < 10; i++) {
-            alert('DEUS E FIEL');
-            }
-    </script>
+        <p id="teste">Conteudo</p>
+
+        <script>
+          var v = document.getElementById('teste');
+          v.innerHTML = '<ul>';
+          var nomes = [
+            'fabricio',
+            'manu',
+            'melissa',
+            'larissa',
+            'eduarda',
+            'jcesar'
+          ];
+          for (var i = 0; i < nomes.length; i++) {
+            v.innerHTML += '<li>' + nomes[i];
+            v.innerHTML += '</li>';
+          }
+          v.innerHTML += '</ul>';
+        </script>
     </body>
 </html>
